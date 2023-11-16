@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 ---
 
 <Layout title="Ed Canina Alfa">
@@ -74,7 +73,7 @@ import Card from "../components/Card.astro";
       </div>
       <figure>
         <img
-          src="/images/about.jpeg"
+          src="/images/opt/about.jpeg"
           alt="Imagen de un perro para la seccion acerca de"
           class="aspect-[1/1] rounded-lg object-cover"
         />
@@ -86,7 +85,7 @@ import Card from "../components/Card.astro";
     >
       <figure>
         <img
-          src="/images/work.jpeg"
+          src="/images/opt/work.jpeg"
           alt="Imagen para la seccion de trabajo"
           class="aspect-[1/1] rounded-lg object-cover"
         />
@@ -123,7 +122,7 @@ import Card from "../components/Card.astro";
       </div>
       <figure>
         <img
-          src="/images/discover-work.jpeg"
+          src="/images/opt/discover-work.jpeg"
           alt="Imagen para la seccion de descubrir"
           class="aspect-[1/1] rounded-lg object-cover"
         />
@@ -156,7 +155,7 @@ import Card from "../components/Card.astro";
       <p>ESTAREMOS ENCANTADOS DE RESPONDERLE</p>
       <form
         class="text-left py-4"
-        action="https://formsubmit.co/marcoferab2001@gmail.com"
+        action="https://formsubmit.co/26gmoalfa@gmail.com"
         method="post"
       >
         <div class="mb-5">
@@ -200,6 +199,8 @@ import Card from "../components/Card.astro";
           value="Enviar"
           class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
         />
+
+        <input type="hidden" name="_next" value="https://educaninacr.com/" />
       </form>
 
       <div class="flex items-center gap-4">
@@ -281,7 +282,7 @@ import Card from "../components/Card.astro";
     <div
       class="fixed bottom-5 left-5 bg-zinc-950 text-white p-3 rounded-full hover:-translate-y-2 duration-300"
     >
-      <a href="#top" class="">
+      <a href="#top" aria-label="Go top">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-arrow-narrow-up"
@@ -302,7 +303,12 @@ import Card from "../components/Card.astro";
     <div
       class="fixed bottom-5 right-5 bg-green-600 p-3 rounded-full hover:-translate-y-2 duration-300"
     >
-      <a href="https://wa.me/+50683503020" class="text-white">
+      <a
+        href="https://wa.me/+50683503020"
+        aria-label="Go Whatsapp"
+        class="text-white"
+      >
+        <span class="hidden">whatsapp</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="icon icon-tabler icon-tabler-brand-whatsapp"
@@ -326,7 +332,7 @@ import Card from "../components/Card.astro";
 
 <style>
   #header {
-    background-image: url("/images/header.jpeg");
+    background-image: url("/images/opt/header.jpeg");
     background-size: cover;
     background-position: center;
   }
